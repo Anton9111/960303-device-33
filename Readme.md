@@ -1,4 +1,4 @@
-# Личный проект «Девайс!»
+# Личный проект «Девайс»
 
 * Студент: [Anton Kirillov](https://up.htmlacademy.ru/htmlcss/32/user/960303).
 * Наставник: [Анастасия Полозова] (https://htmlacademy.ru/profile/id258631)
