@@ -9,10 +9,10 @@
       <nav class="navigation">
         <img src="#" alt="DEVICE">
         <div>
-          <ul class="navigation-list navigation-user">
-            <form>
+           <form>
              <input type="search" placeholder="Поиск по сайту">
              </form>
+            <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <a class="navigation-list" href="#">
                 <span class="visually-hidder">
@@ -37,23 +37,23 @@
           </ul>
           <ul class="navigation-list">
             <li class="navigation-item"> 
-             <a class="navigation-list" href="#">Каталог товаров</a>
+             <a class="navigation-link" href="#">Каталог товаров</a>
             </li>
             <li class="navigation-item"> 
-             <a class="navigation-list" href="#">Доставка</a>
+             <a class="navigation-link" href="#">Доставка</a>
             </li>
             <li class="navigation-item"> 
-             <a class="navigation-list" href="#">Гарантия</a>
+             <a class="navigation-link" href="#">Гарантия</a>
             </li>
             <li class="navigation-item"> 
-             <a class="navigation-list" href="#">Контакты</a>
+             <a class="navigation-link" href="#">Контакты</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="main-index">
-      <section class="gallery">
+      <section class="promo-slider">
           <img src="slider-3.png" alt="пример 1 фото">
           <ol class="main-index-list">
             <li class="main-index-item">
@@ -72,19 +72,43 @@
               </button>
             </li>
           </ol>
+          <h2 class="visually-hidden">Промо-слайдер</h2>
+          <input class="promo-slider__input  visually-hidden" id="promo-control-1" type="radio" name="promo-control" checked>
+          <input class="promo-slider__input  visually-hidden" id="promo-control-2" type="radio" name="promo-control">
+          <input class="promo-slider__input  visually-hidden" id="promo-control-3" type="radio" name="promo-control">
+          <ul class="promo-slider__item1">
+           <img src="#" ait="Квадракоптер">
             <h2>Порхает как бабочка,
                 жалит как пчела!
               </h2>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <table>
-            <h3>Подробнее</h3>
-              <dl>
-                <dt>800 м</dt>
-                <dt>Дальность полета</dt>
-                <dt>50 м</dt>
-                <dt>Радиус порожения</dt>
-              </dl>
-      </section >
+            <a a class="information-for-users-promo-slider" href="#">Подробнее</a>
+                <li class="promo-slider__item3 promo-slider1">800 м</li>
+                <li class="promo-slider__item3 promo-slider-description1">Дальность полета</li>
+                <li class="promo-slider__item3 promo-slider1">50 м</li>
+                <li class="promo-slider__item3 promo-slider-description1">Радиус порожения</li>
+            </ul>
+            <ul class="promo-slider__item3">
+              <img src="#" ait="Час">
+                <h2>Худеем правильно!</h2>
+               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="information-for-users-promo-slider" href="#">Подробнее</a>
+               <li class="promo-slider__item3 promo-slider2">48 часов</li>
+               <li class="promo-slider__item3 promo-slider-description2">Без подзарядки</li>
+            </ul>
+            <ul class="promo-slider__item3">
+              <img src="#" ait="Квадракоптер">
+                   <h2>Делай селфи, как Бен Стиллер!</h2>
+                   <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+                   <a class="information-for-users-promo-slider" href="#">Подробнее</a>
+                       <li class="promo-slider__item3 promo-slider3">8,5 м</li>
+                       <li class="promo-slider__item3 promo-slider-description3">Длина палки</li>
+                       <li class="promo-slider__item3 promo-slider3">5 кг</li>
+                       <li class="promo-slider__item3 promo-slider-description3">Вес палки</li>
+                       <li class="promo-slider__item3 promo-slider3">Карбон</li>
+                       <li class="promo-slider__item3 promo-slider-description3">Материал</li>
+              </ul>
+          </section >
       <section>
         <ul class="equipment-catalog-list">
           <li class="equipment-catalog-item" >
@@ -132,7 +156,7 @@
           <li class="information-for-users-list" href="">
             Доставка
           </li>
-          <h3>Доставка</h3>
+          <h2>Доставка</h2>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</br>
             Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           <li class="information-for-users-list" href="">
@@ -144,6 +168,7 @@
         </ul>
       </section>
  <section class="company-information-list">
+   <a class="delivery information line" href="#"><b>Доставим редкий товар под заказ</b></a>
    <h2>О Нас</h2>
    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
     <p> Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -158,19 +183,19 @@
        ТоксБерри
      </li>
     </ul>
-    <h4 class=""> 
-      <a class="information-for-users-company" href="">Подробнее о нас</a>
-      </h4>
+    <h2>
+    <a class="information-for-users-company" href="">Подробнее о нас</a>
+      </h2>
  </section>
  <section class="contacts">
-  <h3>Контакты</h3>
+  <h2>Контакты</h2>
   <p>Вы можете забрать товар сами, заехав в наш офис.<br>
      Заодно, вы сможете проверить работоспособность покупки. </p>
      <address class="contacts-address">
       <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <a class="contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
     </address>
-    <h3 class="contacts-subtitle">Время работы</h3>
+    <b class="contacts-subtitle">Время работы</b>
     <ul class="contacts-schedule">
       <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
       <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
@@ -179,56 +204,56 @@
     Напишите нам
     </a>
   </section>
-</main>
-      <aside>
-        <section>
-          <h2>
-           Подпишитесь на рассылку
-          </h2>
-          <p>
-          Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,<br>
-          распаковками,
-           а также акции, спецпредложения и вот это вот всё.
-         </p>
-        </section>
+  </main>
+  <section>
+      <h2>
+       Подпишитесь на рассылку
+      </h2>
+      <p>
+      Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,<br>
+      распаковками,
+      а также акции, спецпредложения и вот это вот всё.
+      </p>
+    </section>
   <form>
     <p class="appointment-form-name">
      <input type="text" placeholder="Ваш e-mail">
     </p>
     <button class="button" type="submit">Подписаться</button>
-</form>
-  <ul class="">
-    <li class="">
-      <a class="" href="#">
+  </form>
+    <ul class="">
+      <li class="">
+       <a class="" href="#">
         <span class="visually-hidden">Facebook</span>
       </a>
-    </li>
-    <li class="">
+      </li>
+      <li class="">
       <a class="" href="#">
         <span class="visually-hidden">Instagram</span>
       </a>
-    </li>
-    <li class="">
+      </li>
+      <li class="">
       <a class="" href="#">
         <span class="visually-hidden">Twitter</span>
       </a>
-    </li>
-  </ul>
-      <aside>
+      </li>
+    </ul>
     <footer>
-      <div class="page-footer__info">
-        <div class="page-footer__address">
+        <address class="page-footer__address">
           <span>Санкт-Петербург, набережная реки Карповки, 5, литера П.</span>
-        </div>
-        <div class="information-for-users">
-          <a class="information-for-users-delivery" href="#">Доставка</a>
-          <a class="information-for-users-guarante" href="#">Гарантия</a>
-          <a class="information-for-users-contacts" href="#">Контакты</a>
-        </div>
-        <div class="">
+        </address>
+        <ul>
+        <li class="navigation-item"> 
+          <a class="navigation-link" href="#">Доставка</a>
+         </li>
+         <li class="navigation-item"> 
+          <a class="navigation-link" href="#">Гарантия</a>
+         </li>
+         <li class="navigation-item"> 
+          <a class="navigation-link" href="#">Контакты</a>
+         </li>
+       </ul>
           <a href="+7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</a>
-        </div>
-      </div>
     </footer>
   </body>
 </html>
