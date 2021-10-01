@@ -2,35 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-     <title>Девайс</title>
+    <title>Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <img src="#" alt="DEVICE">
+        <img src="img/logo/logo.png" alt="DEVICE">
         <div>
-           <form>
-             <input type="search" placeholder="Поиск по сайту">
-             </form>
+           <form class="search">
+              <img src="img/main/search.png">
+              <input type="search" placeholder="Поиск по сайту">
+            </form>
             <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <a class="navigation-list" href="#">
                 <span class="visually-hidder">
-                  Войти
+                  <img src="img//main/vhod.png" alt="login">  Войти
                  </span>
               </a>
             </li>
             <li class="navigation-item">
              <a class="navigation-list" href="#">
               <span class="visually-hidder">
-                Сравнить
+                <img src="img//main/compare.png">  Сравнить
                </span>
              </a>
             </li>
             <li class="navigation-item">
              <a class="navigation-list" href="#"> 
                <span class="visually-hidder">
-                Корзина
+                <img src="img/main/cart.png">  Корзина
                </span>
               </a>
             </li>
@@ -54,7 +57,7 @@
     </header>
     <main class="main-index">
       <section class="promo-slider">
-          <img src="slider-3.png" alt="пример 1 фото">
+          <img src="" alt="пример 1 фото">
           <ol class="main-index-list">
             <li class="main-index-item">
               <button class="" type="button">
@@ -72,12 +75,11 @@
               </button>
             </li>
           </ol>
-          <h2 class="visually-hidden">Промо-слайдер</h2>
           <input class="promo-slider__input  visually-hidden" id="promo-control-1" type="radio" name="promo-control" checked>
           <input class="promo-slider__input  visually-hidden" id="promo-control-2" type="radio" name="promo-control">
           <input class="promo-slider__input  visually-hidden" id="promo-control-3" type="radio" name="promo-control">
           <ul class="promo-slider__item1">
-           <img src="#" ait="Квадракоптер">
+           <img src="img/slider/slider-1.jpg" ait="Квадракоптер">
             <h2>Порхает как бабочка,
                 жалит как пчела!
               </h2>
@@ -89,7 +91,7 @@
                 <li class="promo-slider__item3 promo-slider-description1">Радиус порожения</li>
             </ul>
             <ul class="promo-slider__item3">
-              <img src="#" ait="Час">
+              <img src="img/slider/slider-2.jpg" ait="Час">
                 <h2>Худеем правильно!</h2>
                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class="information-for-users-promo-slider" href="#">Подробнее</a>
@@ -97,7 +99,7 @@
                <li class="promo-slider__item3 promo-slider-description2">Без подзарядки</li>
             </ul>
             <ul class="promo-slider__item3">
-              <img src="#" ait="Квадракоптер">
+              <img src="img/slider/slider-3.jpg" ait="селфипалка">
                    <h2>Делай селфи, как Бен Стиллер!</h2>
                    <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                    <a class="information-for-users-promo-slider" href="#">Подробнее</a>
@@ -112,39 +114,39 @@
       <section>
         <ul class="equipment-catalog-list">
           <li class="equipment-catalog-item" >
-            <img src="#" href="#">
+            <img src="img/catalog/ochki.svg" href="#">
             <a class="equipment-catalog-list" href="#">
             Виртуальная
            реальность
           </a>
           </li>
           <li class="equipment-catalog-item">
-            <img src="#" href="#">
+            <img src="img/catalog/selfipalka.svg" href="#">
             <a class="equipment-catalog-list" href="catalog.html">
             Моноподы 
            для селфи 
           </a>
           </li>
           <li class="equipment-catalog-item" >
-            <img src="#" href="#"> 
+            <img src="img/catalog/cam.svg" href="#"> 
             <a class="equipment-catalog-list" href="#">
           Экшн-камеры 
            </a>
           </li>
           <li class="equipment-catalog-item" >
-            <img src="#" href="#">
+            <img src="img/catalog/braslet.svg" href="#">
             <a class="equipment-catalog-list" href="#">
           Фитнес-браслеты
            </a>
           </li>
           <li class="equipment-catalog-item">
-            <img src="#" href="#">
+            <img src="img/catalog/chasi.svg" href="#">
             <a class="equipment-catalog-list" href="#">
           Умные часы
             </a>
           </li>
           <li class="equipment-catalog-item">
-            <img src="#" href="#">
+            <img src="img/catalog/kvadra.svg" href="#">
             <a class="equipment-catalog-list" href="#">
           Квадрокоптеры
             </a>
@@ -159,6 +161,7 @@
           <h2>Доставка</h2>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</br>
             Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <img src="img/delivery.svg">
           <li class="information-for-users-list" href="">
             Гарантия
           </li>
@@ -168,9 +171,12 @@
         </ul>
       </section>
  <section class="company-information-list">
-   <a class="delivery information line" href="#"><b>Доставим редкий товар под заказ</b></a>
-   <h2>О Нас</h2>
-   <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+    <a class="delivery information line" href="#">
+      <img src="img/delivery1.png">
+      <b>Доставим редкий товар под заказ</b>
+    </a>
+    <h2>О Нас</h2>
+    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
     <p> Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
    <ul>
      <li class="company-information-item">
@@ -223,22 +229,29 @@
   </form>
     <ul class="">
       <li class="">
-       <a class="" href="#">
-        <span class="visually-hidden">Facebook</span>
+       <a class="" href="https://www.facebook.com/">
+        <span class="visually-hidden">
+          <img src="img/facebook.png"  alr="Facebook" > 
+        </span>
       </a>
       </li>
       <li class="">
-      <a class="" href="#">
-        <span class="visually-hidden">Instagram</span>
+      <a class="" href="https://www.instagram.com/">
+        <span class="visually-hidden">
+          <img src="img/instagram.png" alt="Instagram">
+        </span>
       </a>
       </li>
       <li class="">
-      <a class="" href="#">
-        <span class="visually-hidden">Twitter</span>
+      <a class="" href="https://twitter.com/">
+        <span class="visually-hidden">
+          <img src="img/twitter.png" alt="Twitter">
+        </span>
       </a>
       </li>
     </ul>
     <footer>
+        <img src="img/device.png" alt="DEVICE">
         <address class="page-footer__address">
           <span>Санкт-Петербург, набережная реки Карповки, 5, литера П.</span>
         </address>
