@@ -2,33 +2,33 @@
     font-family: "Raleway";
     font-style: normal;
     font-weight: 800;
-    src: url("\fonts\raleway\raleway-800.woff2");
+    src: url("../fonts/raleway/raleway-800.woff2");
 }
 @font-face {
-    font-family: Rubik;
+    font-family: "Rubik";
     font-style: normal;
     font-weight: 800;
-    src: url(("\fonts\raleway\ribik-800.woff2");
+    src: url(("../fonts/raleway/ribik-800.woff2");
 }
 @font-face {
-    font-family: Rubik;
+    font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
-    src: url(("\fonts\raleway\ribik-400.woff2");
+    src: url(("../fonts/raleway/ribik-400.woff2");
 }
 @font-face {
-    font-family: Rubik;
+    font-family: "Rubik";
     font-style: normal;
     font-weight: 700;
-    src: url(("\fonts\raleway\ribik-700.woff2");
+    src: url(("../fonts/raleway/ribik-700.woff2");
 }
 body {
     font-family: "Raleway", sans-serif;
     background: #E5E5E5;
 
 }
-.visually-hidder {
-    font-family: Rubik;
+.visually-hidden {
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -36,7 +36,7 @@ body {
     color: #000000;
 }
 .navigation-link {
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -46,7 +46,7 @@ body {
     color: #000000;
 }
 .search {
-    font-family: Rubik;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
