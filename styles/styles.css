@@ -51,6 +51,22 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
+    
     color: #000000;
 }
-
+.equipment-catalog-item {
+    display: flex;
+    justify-content: space-around;
+} 
+.navigation {
+    width: 1160px;
+    display: flex;
+}
+div.search {
+    width: 480px;
+    display: inline;
+}
+.navigation-item {
+    width: 220px;
+    display:flex;
+}
