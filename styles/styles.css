@@ -8,19 +8,19 @@
     font-family: "Rubik";
     font-style: normal;
     font-weight: 800;
-    src: url(("../fonts/raleway/ribik-800.woff2");
+    src: url("../fonts/raleway/ribik-800.woff2");
 }
 @font-face {
     font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
-    src: url(("../fonts/raleway/ribik-400.woff2");
+    src: url("../fonts/raleway/ribik-400.woff2");
 }
 @font-face {
     font-family: "Rubik";
     font-style: normal;
     font-weight: 700;
-    src: url(("../fonts/raleway/ribik-700.woff2");
+    src: url("../fonts/raleway/ribik-700.woff2");
 }
 body {
     font-family: "Raleway", sans-serif;
