@@ -22,12 +22,29 @@
     font-weight: 700;
     src: url("../fonts/raleway/ribik-700.woff2");
 }
+html {
+    width: 1440px;
+    height: 3208px;
+}
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
     font-family: "Raleway", sans-serif;
     background: #E5E5E5;
-
 }
-.visually-hidden {
+.main-container {
+    flex-grow: 1;
+}
+.logo {
+    display: block;
+    width: 145px;
+    height: 36px;
+    left: 201px;
+    top: 17px;
+}
+.search {
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -44,29 +61,78 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #000000;
+    width: 480px;
 }
-.search {
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    
-    color: #000000;
+.navigation-user {
+    max-width: 250px;
+    margin-left: auto;
+}
+.navigation{
+    display: flex;
+    width: 1160px;
+    height: 300px;
+    left: 140px;
+    top: 40px;
+    margin: 0 auto;
+    background: #FFE17F;
+}
+.page-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+.promo-slider {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.image {
+    left: 0 auto; 
+}
+.promo-slider-item {
+    right: auto;
+
 }
 .equipment-catalog-item {
     display: flex;
-    justify-content: space-around;
-} 
-.navigation {
-    width: 1160px;
-    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
-div.search {
-    width: 480px;
-    display: inline;
+.button {
+    font-family: Raleway;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+
+.button-two {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
-.navigation-item {
-    width: 220px;
-    display:flex;
+.button-one {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.information-for-users-list {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
 }
