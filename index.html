@@ -6,59 +6,57 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <!--хеадер-->
     <header class="page-header">
+      <div class="page-header-logo">
+        <a href="../960303-device-33/index.html"><img class="logo" src="img/logo/logo.png" width="145" height="36" alt="DEVICE"></a>
+      </div>
       <nav class="navigation">
-        <img class="logo" src="img/logo/logo.png" width="145" height="36" alt="DEVICE">
-        <div class="search">
-          <form class="search">
-            <input type="search" placeholder="Поиск по сайту">
-          </form>
-        </div>
-        <div>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-list" href="#">
-                <span class="visually-hidden">
+        <ul class="navigation-list">
+          <li class="navigation-item__navigation-search">
+            <form class="navigation-link" >
+              <input type="search" width="560px"  height="20px" placeholder="Поиск по сайту" >
+            </form> 
+          </li>       
+            <li class="navigation-item  navigation-item--login">
+              <a class="navigation-link  navigation-link--login" href="#">
                   Войти
-                </span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-list" href="#">
-                <span class="visually-hidden">
+            <li class="navigation-item  navigation-item--compare">
+              <a class="navigation-link  navigation-link--compare" href="#">
                  Сравнить
-                </span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-list" href="#"> 
-                <span class="visually-hidden">
+            <li class="navigation-item  navigation-item--cart">
+              <a class="navigation-link  navigation-link--cart" href="#"> 
                   Корзина
-                 </span>
-               </a>
-             </li>
-          </ul>
-          <ul class="navigation-list">
-            <li class="navigation-item"> 
-              <a class="navigation-link" href="#">Каталог товаров</a>
-            </li>
-            <li class="navigation-item"> 
-              <a class="navigation-link" href="#">Доставка</a>
-            </li>
-            <li class="navigation-item"> 
-              <a class="navigation-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-item"> 
-             <a class="navigation-link" href="#">Контакты</a>
+              </a>
             </li>
           </ul>
-        </div>
+          <ul class="nav-list-user"> 
+            <li class="nav-item-user  nav-item-user--catalog"> 
+              <a class="nav-link-user  nav-link-user--catalog" href="#">Каталог товаров</a>
+            </li>
+            <li class="nav-item-user  nav-item-user--delivery"> 
+              <a class="nav-link-user  nav-link-user--delivery" href="#">Доставка</a>
+            </li>
+            <li class="nav-item-user  nav-item-user--warranty"> 
+              <a class="nav-link-user  nav-link-user--warranty" href="#">Гарантия</a>
+            </li>
+            <li class="nav-item-user  nav-item-user--contacts"> 
+             <a class="nav-link-user  nav-link-user--contacts" href="#">Контакты</a>
+            </li>
+          </ul>
       </nav>
     </header>
     <main class="main-container main-index">
+   <!-- Слайды с информацией -->    
     <div class="page-container">
       <section class="promo-slider">
-          <img src="" alt="пример 1 фото">
+          <input class="promo-slider__input  visually-hidden" id="promo-control-1" type="radio" name="promo-control" checked>
+          <input class="promo-slider__input  visually-hidden" id="promo-control-2" type="radio" name="promo-control">
+          <input class="promo-slider__input  visually-hidden" id="promo-control-3" type="radio" name="promo-control">
           <ol class="main-index-item">
             <li class="main-index-list">
               <button class="" type="button">
@@ -76,11 +74,8 @@
               </button>
             </li>
           </ol>
-          <input class="promo-slider__input  visually-hidden" id="promo-control-1" type="radio" name="promo-control" checked>
-          <input class="promo-slider__input  visually-hidden" id="promo-control-2" type="radio" name="promo-control">
-          <input class="promo-slider__input  visually-hidden" id="promo-control-3" type="radio" name="promo-control">
-          <img class="image" src="img/slider/slider-1.jpg" width="560" height="560" ait="Квадракоптер">
             <ul class="promo-slider-item">
+            <img class="image" src="img/slider/slider-1.jpg" width="560" height="560" ait="Квадракоптер">
             <h2>Порхает как бабочка,
               жалит как пчела!
             </h2>
@@ -136,49 +131,53 @@
             </ul>
           </section >
         </div>
-      <section>
-        <ul class="equipment-catalog-item">
+<!-- Каталог -->     
+      <section class="equipment-catalog">
+        <ul class="equipment-catalog-list">
           <li class="equipment-catalog-item" >
-            <img src="#" width="97" height="55" href="#">
+            <img class="img-catalog" src="#" width="160" height="160" href="#">
             <a class="equipment-catalog-link" href="#">
             Виртуальная
            реальность
           </a>
           </li>
           <li class="equipment-catalog-item">
-            <img src="#" width="86" height="117" href="#">
+            <img class="img-catalog" src="#" width="160" height="160" href="#">
             <a class="equipment-catalog-link" href="catalog.html">
             Моноподы 
            для селфи 
           </a>
           </li>
           <li class="equipment-catalog-item" >
-            <img src="#" width="71" height="87" href="#"> 
+            <img class="img-catalog" src="#" width="160" height="160" href="#"> 
             <a class="equipment-catalog-link" href="#">
           Экшн-камеры 
            </a>
           </li>
           <li class="equipment-catalog-item" >
-            <img src="#" width="107" height="65" href="#">
+            <img class="img-catalog" src="#" width="160" height="160" href="#">
             <a class="equipment-catalog-link" href="#">
           Фитнес-браслеты
            </a>
           </li>
           <li class="equipment-catalog-item">
-            <img src="#" width="56" height="98" href="#">
+            <img class="img-catalog" src="#" width="160" height="160" href="#">
             <a class="equipment-catalog-link" href="#">
           Умные часы
             </a>
           </li>
           <li class="equipment-catalog-item">
-            <img src="#" width="132" height="69" href="#">
+            <img class="img-catalog" src="#" width="160" height="160" href="#">
             <a class="equipment-catalog-link" href="#">
           Квадрокоптеры
             </a>
          </li>
         </ul>
       </section>
+
+
       <section class="information-for-users">
+        <h2>Доставка</h2>
         <ul class="information-for-users-item">
           <li class="information-for-users-link" href="">
             Доставка
@@ -206,53 +205,57 @@
           </li>
         </ul>
       </section>
- <section class="company-information-list">
-    <a class="delivery information line" href="#">
-      <img src="img/delivery1.png">
-      <b>Доставим редкий товар под заказ</b>
-    </a>
-    <h2>О Нас</h2>
-    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-    <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-   <ul class="company-information-item">
-     <li class="company-information-link">
-      Меловые линии
-     </li>
-     <li class="company-information-link"> 
-       СДИК
-     </li>
-     <li class="company-information-link">
-       ТоксБерри
-     </li>
-    </ul>
-    <h2>
-    <a class="information-for-users-company" href="">
-      <button class="button-two" type="submit">
-        Подробнее о нас
-      </button>
-    </a>
- </section>
- <section class="contacts">
-  <h2>Контакты</h2>
-  <p>Вы можете забрать товар сами, заехав в наш офис.<br>
-     Заодно, вы сможете проверить работоспособность покупки. </p>
-     <address class="contacts-address">
-      <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      <a class="contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
-    </address>
-    <b class="contacts-subtitle">Время работы</b>
-    <ul class="contacts-schedule">
-      <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-      <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
-    </ul> 
-    <a class="information-for-users-mail" href="#">
-      <button class="button-two" type="submit">
-        Напишите нам
-      </button>
-    </a>
-  </section>
+    <section class="company-information-list">
+        <a class="delivery-information-list" href="#">
+          <img class="delivery-img" src="img/delivery1.png" width="47px" height= "31px">
+          <b class="delivery-information-link" >Доставим редкий товар под заказ</b>
+        </a>
+      <article class="company-list">
+        <h2>О Нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным </br>
+          гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдалённые </br>
+           уголки России транспортными компаниями:</p>
+        <ul class="company-information-item">
+        <li class="company-information-link">
+          Меловые линии
+        </li>
+        <li class="company-information-link"> 
+         СДИК
+        </li>
+        <li class="company-information-link">
+         ТоксБерри
+        </li>
+      </ul>
+      <h2>
+        <a class="information-for-users-company" href="">
+         <button class="button-two" type="submit">
+            Подробнее о нас
+         </button>
+        </a>
+      </article>
+    </section>
+    <section class="contacts">
+     <h2>Контакты</h2>
+     <p>Вы можете забрать товар сами, заехав в наш офис.<br>
+        Заодно, вы сможете проверить работоспособность покупки. </p>
+      <address class="contacts-address">
+        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <a class="contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
+      </address>
+      <b class="contacts-subtitle">Время работы</b>
+      <ul class="contacts-schedule">
+        <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+        <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+      </ul> 
+      <a class="information-for-users-mail" href="#">
+        <button class="button-two" type="submit">
+          Напишите нам
+        </button>
+      </a>
+    </section>
   </main>
-  <section>
+    <section>
       <h2>
        Подпишитесь на рассылку
       </h2>
@@ -264,54 +267,54 @@
     </section>
   <form>
     <p class="appointment-form-name">
-     <input type="text" placeholder="Ваш e-mail">
+      <input type="text" placeholder="Ваш e-mail">
     </p>
     <button class="button" type="submit">Подписаться</button> 
     <p>Это бесплатно</p>
   </form>
   <footer>
-        <img src="img/device.png" alt="DEVICE">
-        <address class="page-footer__address">
+    <img src="img/device.png" alt="DEVICE">
+      <address class="page-footer__address">
           <span>Санкт-Петербург, набережная реки Карповки, 5, литера П.</span>
-        </address>
-        <ul>
-          <li class="navigation-item"> 
-            <a class="navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-item"> 
-           <a class="navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-item"> 
+      </address>
+      <ul>
+        <li class="navigation-item"> 
+          <a class="navigation-link" href="#">Доставка</a>
+        </li>
+        <li class="navigation-item"> 
+          <a class="navigation-link" href="#">Гарантия</a>
+        </li>
+        <li class="navigation-item"> 
           <a class="navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="">
-          <li class="">
-            <a class="" href="https://www.facebook.com/">
-              <span class="visually-hidden">
-                <img src="img/facebook.png"  alr="Facebook" > 
-              </span>
-            </a>
-          </li>
-          <li class="">
-            <a class="" href="https://www.instagram.com/">
-              <span class="visually-hidden">
-                <img src="img/instagram.png" alt="Instagram">
-              </span>
-            </a>
-          </li>
-          <li class="">
-            <a class="" href="https://twitter.com/">
-              <span class="visually-hidden">
-                <img src="img/twitter.png" alt="Twitter">
-              </span>
-            </a>
-          </li>
-          </ul>
-          <a href="tel:+7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</a>
-          <a class="" href="https://htmlacademy.ru/">
-            <img src="../img/logo/htmlacademiy.svg"  alt="HtmlAcademy">
+        </li>
+      </ul>
+      <ul class="">
+        <li class="">
+          <a class="" href="https://www.facebook.com/">
+            <span class="visually-hidden">
+              <img src="img/facebook.png"  alr="Facebook" > 
+            </span>
           </a>
+        </li>
+        <li class="">
+          <a class="" href="https://www.instagram.com/">
+            <span class="visually-hidden">
+              <img src="img/instagram.png" alt="Instagram">
+            </span>
+          </a>
+        </li>
+        <li class="">
+          <a class="" href="https://twitter.com/">
+            <span class="visually-hidden">
+              <img src="img/twitter.png" alt="Twitter">
+            </span>
+          </a>
+        </li>
+      </ul>
+        <a href="tel:+7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</a>
+        <a class="" href="https://htmlacademy.ru/">
+          <img src="../img/logo/htmlacademiy.svg"  alt="HtmlAcademy">
+        </a>
     </footer>
   </body>
 </html>
