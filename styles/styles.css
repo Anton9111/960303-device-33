@@ -22,6 +22,9 @@
     font-weight: 700;
     src: url("../fonts/rubik/rubik-700.woff2");
 }
+*,::before,::after {
+    box-sizing: inherit;
+}
 html {
     width: 1440px;
     height: 100%;
@@ -38,7 +41,7 @@ body {
     line-height: 30px;
     background: #E5E5E5;
 }
-main .main-index{
+.main-container{
    margin-left: 140px; 
 
 }
@@ -729,45 +732,128 @@ main .main-index{
 }
 /* Рассылка конец */
 
+/* КАТАЛЛОГ МОНОПОДЫ */
+.color {
+    background-color: #FFFFFF;
+}
 
 .main-inner {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .inner-header {
-    width: 560px;
+    width: 1160px;
     height: 150px;
+    margin-left: 200px;
+    
 }
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 ;
+    list-style-type: none;
+}
+.breadcrumbs-item{
+    position: relative;
+    padding-right: 36px;
+    font-family: "Rubik","Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;   
+}
+.breadcrumbs-item:nth-child(2){
+    padding-right: 34px;
+}
+.breadcrumbs-item::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 19px;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.breadcrumbs-item:last-child::after {
+    display: none
+}
+
+
 
 /* Фильтр */
 
-.catalog {
-    display: flex;
-    flex-wrap: wrap;
-    width: 468px;
-}
+.filter-product {
 
+    
+}
+.catalog {
+
+}
+.sidebar__title-wrap{
+    display: flex;
+    width: 468px;
+    height: 70px;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    background: #DCDCDC;
+}
+.catalog-filter-group {
+    margin-left: 200px;
+    width: 234px;
+}
+.catalog-filter {
+    background: #E5E5E5;
+}
 /* Фильтр  конец*/
 
 
 /* Каталог */
 
+.sorting {
+    font-family: "Raleway","Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;    
+}
+
 .product-card {
 
 }
 .sorting-type {
-    width: 972px;
-    height: 70px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 70px;
+    background: #EBEBEB;
+    align-items: center;
+    padding-left: 72px;
+}
+.sorting {
+    width: 200px;
 }
 .select-control {
+    margin-left: ;
     justify-content: space-around;
 }
 .product-list {
     display: grid;
+    margin-top: 69px;
+    margin-left: 72px;
+    padding: 0px;
     grid-template-columns:  360px 360px;
     grid-template-rows: 506px 506px;
     gap: 40px 44px;
+    list-style-type: none;
 }
 .product--1 {
     grid-column: 1 / 2;
@@ -785,5 +871,34 @@ main .main-index{
     grid-column: 2 / 3;
     grid-row:  2 / 3;
 }
+.pagination{
+    list-style-type: none;
+}
+.product-info {
+    display: flex;
+    justify-content: space-between;
+}
+.product-card-title {
+    width: 280px;
+    height: 50px;
+}
+.product-card-price {
 
-/* Каталог конец*/
+}
+.pagination {
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+}
+.pagination-show-more {
+    width: 760px;
+    height: 55px;
+    opacity: 0.1;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    order: -1;
+    margin-left: 72px;
+}
+
+
+ /* КАТАЛЛОГ МОНОПОДЫ  конец*/

@@ -5,7 +5,7 @@
      <title>Девайс</title>
      <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="color">
     <header class="page-header">
       <header class="page-header">
         <div class="page-header-logo">
@@ -74,13 +74,13 @@
           </li>
         </ul>
       </section>
-    
-    <aside class="catalog"> 
+      <div class="filter-product">
+    <section class="catalog"> 
       <h2 class="visually-hidden">
         Список товаров с фильтром
       </h2>
       <div class="sidebar__title-wrap">
-        <h2>Фильтр:</h2>
+        <h3>Фильтр:</h3>
       </div>
         <form class="catalog-filter" action="https://echo.hamlacademy.ru/" method="GET">
           <fieldset class="catalog-filter-group">
@@ -173,13 +173,15 @@
           Показать
           </button>
         </form>
-      </aside>
+      </div>
+      </section>
+      <div class="sorting-product">
       <form class="sorting-type">
         <label class="sorting" for="sorting">Сортировка:</label>
         <section class="select-control" id="sorting" name="sorting">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap">Сначала дешовые</option>
-          <option value="expensive">Сначала дорогие</option>
+          <option value="popular" checked>Сначала популярные</option>
+          <option class="visually-hidden" value="cheap">Сначала дешовые</option>
+          <option class="visually-hidden" value="expensive">Сначала дорогие</option>
         </section>
         <button class="visually-hidden" type="submit">
           Отсортировать
@@ -190,31 +192,39 @@
           <li class="product-card product--1">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="../960303-device-33/img/Catalog-filtr/selfie1.png" alt="">
-              <h3 class="product-card-title">Любительская селфи-палка</h3>
             </a>
-            <p class="product-card-price">500 р</p>
+            <div class="product-info">
+              <h3 class="product-card-title">Любительская селфи-палка</h3>
+              <p class="product-card-price">500 р</p>
+            </div>
           </li>
           <li class="product-card  product--2">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="../960303-device-33/img/Catalog-filtr/selfie2.png" alt="">
-              <h3 class="product-card-title">Профессиональная селфи-палка </h3>
             </a>
-            <p class="product-card-price">1 500 р</p>
+            <div class="product-info">
+              <h3 class="product-card-title">Профессиональная<br> селфи-палка </h3>
+              <p class="product-card-price">1 500 р</p>
+            </div>
           </li>
           <li class="product-card  product--3">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="../960303-device-33/img/Catalog-filtr/selfie3.png" alt="">
-              <h3 class="product-card-title">Непотопляемая
-                селфи-палка</h3>
             </a>
-            <p class="product-card-price">2 500 р</p>
+            <div class="product-info">
+              <h3 class="product-card-title">Непотопляемая <br>
+              селфи-палка</h3>
+              <p class="product-card-price">2 500 р</p>
+            </div>
           </li>
           <li class="product-card  product--4">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="../960303-device-33/img/Catalog-filtr/selfie4.png" alt="">
-              <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
             </a>
-            <p class="product-card-price">4 900 р</p>
+            <div class="product-info">
+              <h3 class="product-card-title">Селфи-палка «Следуй за<br> мной»</h3>
+              <p class="product-card-price">4 900 р</p>
+            </div>
           </li>
          </ul>
          <Ul class="pagination">
@@ -255,10 +265,11 @@
           </li>
          </Ul>
         <button class="button pagination-show-more" type="button">
-          Загрузить еще
+          <p>Загрузить еще</p>
         </button>
       </div>
      </section>
+    </div>
     </main>
     <footer>
       <img src="img/device.png" alt="DEVICE">
