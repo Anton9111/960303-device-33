@@ -39,10 +39,16 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
-    background: #E5E5E5;
+    background-color: #E5E5E5;
+}
+::before, ::after {
+    box-sizing: inherit;
+}
+a {
+    text-decoration: none    
 }
 .main-container{
-   margin-left: 140px; 
+    margin-left: 140px; 
 
 }
 
@@ -58,7 +64,10 @@ body {
     margin-left: 96px;
     margin-top: 17px;
     margin-left: 201px;
-    margin-bottom: -27px;
+    margin-bottom: -15px;
+}
+.page-header {
+    
 }
 /* Хеадер */
 .navigation{
@@ -75,41 +84,11 @@ body {
     font-size: 16px;
     line-height: 18px;
 }
-.navigation-item__navigation-search {
+.navigation-list--nav  {
     display: flex;
     flex-wrap: wrap;
-    width: 480px;
-    height: 20px;
-    margin-top: 40px;
-    margin-left: 96px;
-    
-}
-.navigation-item--login {
-    width: 220px;
-    height: 20px;
-    margin-top: 40px;
-    margin-left: 49px;
-}
-.navigation-item--compare {
-    width: 100px;
-    height: 20px;
-    margin-left: 15px;
-    margin-top: 40px;
-}
-.navigation-item--cart {
-    width: 100px;
-    height: 20px;
-    margin-left: 15px;
-    margin-top: 40px;
-}
-.navigation-item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-self: space-between;
-}
-
-.navigation-list {
-    display: flex;
+    padding: 0;
+    margin-bottom: 21px;
     font-family: "Rubik","Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -118,16 +97,94 @@ body {
     color: #000000;
     list-style-type: none;
 }
-
-.navigation-link {
-    display: block;
+.navigation-item--nav  {
+    padding: 15px;
+    padding-top: 40px;
+}
+.navigation-item--search {
+    position: relative;
+    display: flex;
     flex-wrap: wrap;
+    width: 480px;
+    height: 20px;
+    margin-left: 96px;   
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+.navigation-link--search::before {
+    background-image: url(../img/search.svg);
+    cursor: pointer;
+    position: absolute;
+    left: -26px;
+    width: 16px;
+    height: 16px;
+}
+.navigation-item--login {
+    width: 220px;
+    height: 20px;
+    padding-top: 40px;
+}
+.navigation-link--nav {
+    position: relative;
+}
+.navigation-link--nav:hover {
+    opacity: .6;
+}
+.navigation-link--nav:active {
+    opacity: .3;
+}
+.navigation-link--nav:focus {
+    position: absolute;
+    border: 2px solid #AF4FFF;
+    border-radius: 20px;
+}
+
+.navigation-link--nav::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.navigation-link--login::before {
+    position: absolute;
+    background-image: url(../img/nav/user.svg);
+    left: -25px;
+}
+
+.navigation-item--compare {
+    width: 100px;
+    height: 20px;
+    margin-left: 15px;
+
+}
+.navigation-link--compare::before {
+    position: absolute;
+    background-image: url(../img/nav/compare.svg);
+    margin-left: -20px;
+}
+.navigation-item--cart {
+    width: 100px;
+    height: 20px;
+}
+.navigation-link--cart::before {
+    position: absolute;
+    background-image: url(../img/nav/cart.svg);
+    margin-left: -20px;   
+}
+
+.navigation-link--nav  {
     font-family: "Rubik","Arial" sans-serif;
     font-style: normal;
     font-weight: 700px;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+    text-decoration: none;
+    margin-left: 16px;
 }
 .nav-list-user{
     display: flex;
@@ -139,6 +196,7 @@ body {
     line-height: 21px;
     color: #000000;
     list-style-type: none;
+    text-decoration: none;
 }
 .nav-item-user {
     display: flex;
@@ -153,6 +211,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+    text-decoration: none;
 }
 .nav-item-user--catalog{
     width: 236px;
@@ -165,7 +224,6 @@ body {
     height: 20px;
     margin-left: 304px;
     margin-top: 44px
-    
 }
 .nav-item-user--warranty{
     width: 140px;
@@ -179,6 +237,24 @@ body {
     margin-left: 60px;
     margin-top: 44px
 }
+.nav-link-user--catalog {
+    position: relative;
+}
+.nav-link-user::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;    
+}
+.nav-link-user--catalog::before {
+    background-image: url(../img/nav/ellipse.svg);
+    position: absolute;  
+    right: -65px;
+    bottom: -15px;
+}
+
+
 /* Хеадер заканчивается */
 
 /*Слайды с информацией*/
@@ -217,6 +293,7 @@ body {
     align-items: stretch;
     margin-top: 70px;
     padding: 0;
+    list-style-type: none;
 }
 .property {
     width: 160px;
@@ -306,9 +383,13 @@ body {
     color: #000000; 
     background-color: #FFE17F;
 }
+.equipment-catalog-link {
+    text-decoration: none;
+}
 .catalog-item {
     width: 160px;
     height: 160px;
+    text-decoration: none;
 }
 .img-catalog--1 {
     width: 97px;
@@ -358,6 +439,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     margin-top: 33px;
+    text-decoration: none;
 }
 
 /* Каталог конец */
@@ -450,6 +532,36 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     cursor: pointer;
+}
+.services-slider__controls::after {
+    content: "";
+    position: absolute;
+    top: 63px;
+    right: -4px;
+    width: 7px;
+    height: calc(100% - 15px);
+    background-color: #000000;
+}
+.services-slider__control::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    width: 160px;
+    height: 8px;
+    margin-top: -4px;
+    background-color: #f0c52e;
+}
+.services-slider__control::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: -1;
+    width: 0;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
 }
 .services-slider__item h3 {
     font-family: "Raleway","Arial", sans-serif;
@@ -763,11 +875,12 @@ body {
 }
 .navigation-list__footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 480px;
     height: 20px;
+    list-style-type: none;
 }
-.navigation-link {
+.navigation-link__footer {
     font-family: "Raleway","Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -777,6 +890,12 @@ body {
     text-transform: uppercase;
     color: #FFFFFF; 
     text-decoration: none;  
+}
+.navigation-item__footer {
+    width: 148px;
+    height: 20px;
+    margin: 7px;
+    text-align: center;
 }
 .footer a {
     font-family: "Rubik","Arial", sans-serif;
@@ -798,7 +917,20 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
+    margin-left: 155px;
 }
+
+.sa:hover {
+    cursor: pointer;
+    background-color: #fdd90a ;
+    border-radius: 50%;
+}
+.stripe {
+    border: solid 3px #ffc700;
+    background-color: #ffc700;
+    transform: rotate(90deg);
+}
+
 
 
 /* footer конец*/
